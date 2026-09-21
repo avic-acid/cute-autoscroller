@@ -12,7 +12,6 @@ config_version=5
 
 config/name="sidescroller"
 config/features=PackedStringArray("4.8", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [display]
 
