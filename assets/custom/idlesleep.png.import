@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5m43m5djvj1i"
-path="res://.godot/imported/hamter_runns.png-3e918262c4da6a9c828fcddf37daf6be.ctex"
+uid="uid://cd0otg4ajiuvl"
+path="res://.godot/imported/idlesleep.png-601543084fa0d14b3837100660cd996f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hamter_runns.png"
-dest_files=["res://.godot/imported/hamter_runns.png-3e918262c4da6a9c828fcddf37daf6be.ctex"]
+source_file="res://assets/custom/idlesleep.png"
+dest_files=["res://.godot/imported/idlesleep.png-601543084fa0d14b3837100660cd996f.ctex"]
 
 [params]
 

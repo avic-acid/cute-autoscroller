@@ -8,6 +8,7 @@ const JUMP_VELOCITY = -400.0
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
+		$AnimatedSprite2D.play("falling")
 		velocity += get_gravity() * delta
 
 	# Handle jump.
@@ -20,9 +21,13 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 		$AnimatedSprite2D.flip_h = direction < 0
-		$AnimatedSprite2D.play("run")
+		if is_on_floor():
+			$AnimatedSprite2D.play("run")
+			$AnimatedSprite2D.offset.y = 0
 	else:
-		$AnimatedSprite2D.play("idle")
+		if is_on_floor():
+			$AnimatedSprite2D.play("idle")
+			$AnimatedSprite2D.offset.y = -8
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
