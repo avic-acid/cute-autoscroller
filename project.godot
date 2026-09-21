@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="sidescroller"
+run/main_scene="uid://dcelo2ycjhd8b"
 config/features=PackedStringArray("4.8", "GL Compatibility")
 
 [display]
