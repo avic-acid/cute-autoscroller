@@ -881,3 +881,10 @@ offset_bottom = -212.00003
 scale = Vector2(5.9557753, 3.9384964)
 texture = ExtResource("4_1bvp3")
 expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1756554021]
+offset_left = -67.0
+offset_top = -183.0
+offset_right = 37.0
+offset_bottom = -160.0
+text = "branch test A"
