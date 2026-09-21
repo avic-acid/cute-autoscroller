@@ -889,7 +889,7 @@ offset_right = -1.0
 offset_bottom = -114.0
 text = "test branch B"
 
-[node name="Label" type="Label" parent="." unique_id=1756554021]
+[node name="Label2" type="Label" parent="." unique_id=1756554021]
 offset_left = -67.0
 offset_top = -183.0
 offset_right = 37.0
