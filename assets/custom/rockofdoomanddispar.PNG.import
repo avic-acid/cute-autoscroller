@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b21th54ubdq7i"
-path="res://.godot/imported/coin-Sheet.png-6399c6fef3161231b567c3f836f5446c.ctex"
+uid="uid://dll2vmyybamhq"
+path="res://.godot/imported/rockofdoomanddispar.PNG-1c88c6bf5398627cbcb03cf160729a37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/classic_platformer_stone_cave/pickable/coin-Sheet.png"
-dest_files=["res://.godot/imported/coin-Sheet.png-6399c6fef3161231b567c3f836f5446c.ctex"]
+source_file="res://assets/custom/rockofdoomanddispar.PNG"
+dest_files=["res://.godot/imported/rockofdoomanddispar.PNG-1c88c6bf5398627cbcb03cf160729a37.ctex"]
 
 [params]
 

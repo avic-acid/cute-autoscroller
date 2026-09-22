@@ -2,22 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh2tkyiflyual"
-path="res://.godot/imported/hamster_falling.png-6e260d064714b190bf23c264faae0826.ctex"
+uid="uid://df2yw4t2q5cwg"
+path="res://.godot/imported/death_do_all_hamseter.PNG-d7e3845381057d3adb6702b329ab610e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/custom/hamster_falling.png"
-dest_files=["res://.godot/imported/hamster_falling.png-6e260d064714b190bf23c264faae0826.ctex"]
+source_file="res://assets/custom/spritesheets/player/death_do_all_hamseter.PNG"
+dest_files=["res://.godot/imported/death_do_all_hamseter.PNG-d7e3845381057d3adb6702b329ab610e.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
-compress/high_quality_mode=0
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
@@ -26,8 +25,6 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
-mipmaps/preserve_alpha_test_coverage=false
-mipmaps/alpha_test_threshold=0.5
 roughness/mode=0
 roughness/src_normal=""
 process/channel_remap/red=0

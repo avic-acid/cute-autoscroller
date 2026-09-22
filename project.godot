@@ -12,7 +12,7 @@ config_version=5
 
 config/name="cute-autoscroller"
 run/main_scene="uid://dcelo2ycjhd8b"
-config/features=PackedStringArray("4.8", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
 
