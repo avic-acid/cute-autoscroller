@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cd0otg4ajiuvl" path="res://assets/custom/spritesheets/player/idlesleep.png" id="2_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://c5m43m5djvj1i" path="res://assets/custom/spritesheets/player/hamter_runns.png" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://df2yw4t2q5cwg" path="res://assets/custom/spritesheets/player/death_do_all_hamseter.PNG" id="2_sweqy"]
+[ext_resource type="Texture2D" uid="uid://cof1w8humhypj" path="res://assets/classic_platformer_stone_cave/background/background.png" id="6_2hs0m"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1bvp3"]
 radius = 6.0
@@ -163,7 +164,7 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=1759968385]
+[node name="player" type="Node2D" unique_id=1759968385]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=330175952]
 script = ExtResource("1_onrkg")
@@ -176,7 +177,20 @@ shape = SubResource("CapsuleShape2D_1bvp3")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=765158344]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_ivps1")
-animation = &"death"
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=296143589]
 zoom = Vector2(3, 3)
+
+[node name="background" type="TextureRect" parent="CharacterBody2D/Camera2D" unique_id=1728207440]
+z_index = -1024
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.5, 2)
+texture = ExtResource("6_2hs0m")
+expand_mode = 1
+stretch_mode = 3

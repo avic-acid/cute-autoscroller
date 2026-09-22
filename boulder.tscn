@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://kl3qqrgwx1y5"]
+
+[ext_resource type="Texture2D" uid="uid://dll2vmyybamhq" path="res://assets/custom/rockofdoomanddispar.PNG" id="1_n2vxl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hrnko"]
+radius = 23.021729
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xqljg"]
+lifetime_randomness = 0.26
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(5, 1, 1)
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 32.25
+initial_velocity_max = 129.03
+gravity = Vector3(0, 98, 0)
+
+[node name="boulder" type="Node2D" unique_id=364383822]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2140905518]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=90068195]
+texture_filter = 1
+texture = ExtResource("1_n2vxl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=891055109]
+shape = SubResource("CircleShape2D_hrnko")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Area2D" unique_id=2110549438]
+texture_filter = 1
+emitting = false
+draw_order = 2
+process_material = SubResource("ParticleProcessMaterial_xqljg")
