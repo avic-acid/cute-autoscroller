@@ -8,12 +8,20 @@ radius = 23.021729
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xqljg"]
 lifetime_randomness = 0.26
 particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, 25, 0)
 emission_shape = 3
-emission_box_extents = Vector3(5, 1, 1)
+emission_box_extents = Vector3(12.805, 1, 1)
+angle_min = -309.69998
+angle_max = -147.09999
 direction = Vector3(0, -1, 0)
-initial_velocity_min = 32.25
-initial_velocity_max = 129.03
+spread = 30.0
+initial_velocity_min = 1.0
+initial_velocity_max = 48.39
 gravity = Vector3(0, 98, 0)
+scale_min = 2.0
+scale_max = 4.0
+hue_variation_min = -0.010000022
+hue_variation_max = 0.039999977
 
 [node name="boulder" type="Node2D" unique_id=364383822]
 
@@ -27,7 +35,9 @@ texture = ExtResource("1_n2vxl")
 shape = SubResource("CircleShape2D_hrnko")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Area2D" unique_id=2110549438]
+modulate = Color(0.47646075, 0.3407552, 0.16463071, 1)
 texture_filter = 1
-emitting = false
+amount = 13
+lifetime = 0.47
 draw_order = 2
 process_material = SubResource("ParticleProcessMaterial_xqljg")
