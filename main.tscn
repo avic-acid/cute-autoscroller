@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bon7i824n8amq" path="res://assets/classic_platformer_stone_cave/environment/tileset/platform2.png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bihkmkcdayse1" path="res://player.tscn" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://cj5kc6xhb0s3i" path="res://tile_map_layer.gd" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://cg840t6nvt1ah" path="res://boulder_spawner.gd" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://kl3qqrgwx1y5" path="res://boulder.tscn" id="6_7mycd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("1_1bvp3")
@@ -1257,3 +1259,10 @@ script = ExtResource("3_lquwl")
 
 [node name="player" parent="." unique_id=1759968385 instance=ExtResource("3_h2yge")]
 position = Vector2(114, -90)
+
+[node name="BoulderSpawner" type="Node2D" parent="." unique_id=324426773]
+position = Vector2(21, -115)
+script = ExtResource("5_lquwl")
+
+[node name="boulder" parent="." unique_id=364383822 instance=ExtResource("6_7mycd")]
+position = Vector2(25, -98)
